@@ -60,3 +60,9 @@ A sample training course for mid-level Java developers.
 
 ### Code formatting and Linting
 (TBD)
+
+### Connect to Database
+(TBD)
+
+### Various Data Formats
+(TBD)

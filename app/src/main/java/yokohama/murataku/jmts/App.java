@@ -3,12 +3,41 @@
  */
 package yokohama.murataku.jmts;
 
+import org.apache.commons.math3.linear.LUDecomposition;
+import org.apache.commons.math3.linear.MatrixUtils;
+import org.apache.commons.math3.linear.RealMatrix;
+
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        var scanner = new Scanner(System.in);
+
+        System.out.println("Enter the size of the square matrix: ");
+        var size = scanner.nextInt();
+
+        double[][] matrix = new double[size][size];
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.println("Enter the value of the matrix at row " + i + " and column " + j + ": ");
+                matrix[i][j] = scanner.nextDouble();
+            }
+        }
+
+        System.out.println("The matrix is: ");
+        RealMatrix inversed = new LUDecomposition(MatrixUtils.createRealMatrix(matrix)).getSolver().getInverse();
+        var rawInverse = inversed.getData();
+
+        for (int i = 0; i < rawInverse.length; i++) {
+            for (int j = 0; j < rawInverse[i].length; j++) {
+                System.out.print(rawInverse[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }

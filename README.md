@@ -51,3 +51,6 @@ A sample training course for mid-level Java developers.
   * Create new class with name `WebServer`. Implement `public static void main(String[] args)` method.
   * Add routing to show "Hello World" with url "http://localhost:4567/hello"
     * You can see sample code in [Sparkjava top page](https://sparkjava.com/)
+    * Next step: add routing to show "Hello, (Your Name)" with url "http://localhost:4567/hello/(any name)".
+      * When you access `/hello/Hideki`, the page will show "Hello, Hideki".
+      * Hint: [https://sparkjava.com/documentation#routes](https://sparkjava.com/documentation#routes)

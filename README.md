@@ -54,3 +54,9 @@ A sample training course for mid-level Java developers.
     * Next step: add routing to show "Hello, (Your Name)" with url "http://localhost:4567/hello/(any name)".
       * When you access `/hello/Hideki`, the page will show "Hello, Hideki".
       * Hint: [https://sparkjava.com/documentation#routes](https://sparkjava.com/documentation#routes)
+
+### Unit Testing
+(TBD)
+
+### Code formatting and Linting
+(TBD)

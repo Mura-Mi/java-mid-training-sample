@@ -30,8 +30,8 @@ public class App {
         }
 
         System.out.println("The matrix is: ");
-        RealMatrix inversed = new LUDecomposition(MatrixUtils.createRealMatrix(matrix)).getSolver().getInverse();
-        var rawInverse = inversed.getData();
+        RealMatrix inverse = new LUDecomposition(MatrixUtils.createRealMatrix(matrix)).getSolver().getInverse();
+        var rawInverse = inverse.getData();
 
         for (int i = 0; i < rawInverse.length; i++) {
             for (int j = 0; j < rawInverse[i].length; j++) {

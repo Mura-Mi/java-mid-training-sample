@@ -41,3 +41,13 @@ A sample training course for mid-level Java developers.
     * The program asks for the matrix size and then asks for the matrix elements.
     * Then the program shows the inverse of the matrix.
     * Visit [Linear Algebra page](https://commons.apache.org/proper/commons-math/userguide/linear.html)
+
+  ### Minimum web server development
+* Read [Lecture note on Minimum web server development](./lectures/03_minimum-web-server-development.md)
+* Introduce [SparkJava](https://sparkjava.com/)
+  * Visit [Maven Central for spark-core](https://mvnrepository.com/artifact/com.sparkjava/spark-core) page.
+  * Introduce the latest of spark-core to your project.
+* Let's build sample web server.
+  * Create new class with name `WebServer`. Implement `public static void main(String[] args)` method.
+  * Add routing to show "Hello World" with url "http://localhost:4567/hello"
+    * You can see sample code in [Sparkjava top page](https://sparkjava.com/)

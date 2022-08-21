@@ -21,3 +21,7 @@ A sample training course for mid-level Java developers.
     * Implementation Language: choose `Java`
     * Split functionality across multiple subprojects: choose `no`
     * Select build script DSL: choose `Groovy`
+* Try to run the initialized sample project
+  * Mac/Unix/Linux user: Run `./gradlew run` in terminal
+  * Windows user: Run `./gradlew.bat run` in command prompt
+  * Optional: You can also run gradle project from IntelliJ IDEA
